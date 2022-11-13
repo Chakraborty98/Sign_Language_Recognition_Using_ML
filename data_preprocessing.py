@@ -8,11 +8,11 @@ mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
 def mediapipe_detection(image, model):
-    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) # COLOR CONVERSION BGR 2 RGB
-    image.flags.writeable = False                  # Image is no longer writeable
-    results = model.process(image)                 # Make prediction
-    image.flags.writeable = True                   # Image is now writeable 
-    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR) # COLOR COVERSION RGB 2 BGR
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) 
+    image.flags.writeable = False                  
+    results = model.process(image)                 
+    image.flags.writeable = True                 
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR) 
     return image, results
 
 def draw_styled_landmarks(image, results):
