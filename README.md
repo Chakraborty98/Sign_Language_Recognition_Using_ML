@@ -9,6 +9,6 @@ I did this project for my internship in IBM SkillsBuild and Edunet Foundation.
 collection_dataset.py  ->  data_preprocessing.py  ->   data_processing.py  ->  training_model.py  ->  checking_output.py
 
 
-##The American Sign Lanuguage signs are
+The American Sign Lanuguage signs are
 
 ![alt text](https://www.disabled-world.com/pics/1/asl-alphabet.jpg)
